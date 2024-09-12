@@ -1,0 +1,121 @@
+.wrapper {
+    background-color: #fff;
+    border-radius: 6px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 12px;
+}
+
+.poster {
+    width: 548px;
+    height: 548px;
+    border-radius: 4px;
+    
+}
+
+.primary {
+    color: var(--primary-color);
+}
+
+
+.headingWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 14px;
+
+}
+
+.headingInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.username {
+    margin-left: 6px;
+    font-weight: 700;
+}
+
+.contentWrapper {
+    width: 100%;
+    padding: 10px 14px;
+}
+
+.contentHeading {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    max-width: 80%;
+    min-height: 52px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.optionBtn:active {
+    animation-duration: .2s;
+    animation-name: slideout;
+}
+
+.optionBtn {
+    cursor: pointer;
+    padding: 0 12px;
+    margin-right: -12px;
+}
+
+.detailLink {
+    display: block;
+    margin-top: 6px;
+    text-decoration: underline;
+    background: var(--primary-color);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the text transparent */
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.detailLink:hover::after {
+    border-radius: 2px;
+    content: "";
+    width: 64px;
+    height: 2px;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    bottom: 2;
+    left: 0;
+    background: var(--primary-color);
+    animation-duration: .2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      scale: 10%;
+    }
+  
+    to {
+      scale: 100% 1;
+    }
+  }
+
+  @keyframes slideout {
+    from {
+      scale: 90%;
+    }
+  
+    to {
+      scale: 100% 1;
+    }
+  }
