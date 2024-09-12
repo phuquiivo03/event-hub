@@ -1,0 +1,8 @@
+.wrapper {
+    width: var(--sidebar-width);
+    position: fixed;
+}
+
+.right {
+    right: 0;
+}

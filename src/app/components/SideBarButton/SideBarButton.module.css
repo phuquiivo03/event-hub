@@ -1,0 +1,24 @@
+.wrapper {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-bottom: 16px; */
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.wrapper:hover {
+    background: var(--primary-hover);
+}
+
+.title.active {
+    font-weight: 700;
+    
+}
+
+.title {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
