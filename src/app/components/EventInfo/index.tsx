@@ -13,7 +13,12 @@ function EventInfo() {
                 <div className={clsx(styles.dateIconWrapper)}>
                     <span className={clsx(styles.dateIconName)}>AUG</span>
                         <div className={styles.dateIconDate}>
-                            <span className={clsx(styles.dateWrapBefore)}>7</span>
+                            <span className={clsx(styles.dateWrapBefore)}>
+                                
+                                <span className={styles.dateNumeric}>
+                                    7    
+                                </span>
+                            </span>
                         </div>
                 </div>
                 <div className={styles.dateValueWrapper}>
