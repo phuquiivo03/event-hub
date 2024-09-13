@@ -73,6 +73,10 @@
     margin-right: -12px;
 }
 
+
+#gradientIcon {
+    stroke: var(--primary-color);
+}
 .detailLink {
     display: block;
     margin-top: 6px;
