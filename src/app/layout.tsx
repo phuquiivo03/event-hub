@@ -28,6 +28,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(inter.className, dosis_init.variable)}>
+      <svg
+                    
+                    width="0" height="0">
+                        <linearGradient id="gradientStroke" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style={{ stopColor: '#FFB9D2', stopOpacity: 1 }} />
+                            <stop offset="100%" style={{ stopColor: '#BB9BFF', stopOpacity: 1 }} />
+                        </linearGradient>
+                        </svg>
       <AppProvider activeBtn={activeBtn} setActiveBtn={setActiveBtn}>
         {children}
       </AppProvider> 

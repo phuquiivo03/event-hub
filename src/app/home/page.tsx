@@ -1,12 +1,30 @@
 import DefaultLayout from "../layout/DefaultLayout";
-
+import Post from "../components/Post";
 function Home() {
     return ( 
         <DefaultLayout>
-          <h1 className="dosis">
-              Home Page
-          </h1>
+          <Post data={{
+            id: "",
+            title: "",
+            poster: "",
+            username: "",
+            avatar: "",
+          }}/>
+          <Post data={{
+             id: "",
+             title: "",
+             poster: "",
+             username: "",
+             avatar: "",
+          }}/>
 
+          <Post data={{
+             id: "",
+             title: "",
+             poster: "",
+             username: "",
+             avatar: "",
+          }}/>
         </DefaultLayout>
   );
 }

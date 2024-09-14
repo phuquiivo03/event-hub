@@ -1,0 +1,173 @@
+.wrapper {
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 6px;
+    width: 100%;
+    display: flex;
+    min-height: 90vh;
+    box-sizing: border-box;
+}
+
+.leftSideWrapper {
+    padding: 24px;
+}
+
+.poster {
+    width: 252px;
+    border-radius: 4px;
+
+}
+
+.datePickerWrapper {
+    display: flex;
+    align-items: center;
+    margin: 28px 0;
+
+}
+
+.dateIconWrapper {
+}
+
+.dateIconName {
+    display: block;
+    background-image: var(--primary-color);
+    color: #fff;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 38px;
+    text-align: center;
+    font-size: 10px;
+    padding: 2px 0;
+    z-index: 9999;
+}
+
+.dateNumeric {
+    font-size: 14px;
+    font-weight: 600;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+
+.dateIconDate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    position: relative;
+    background-image: var(--primary-color);
+    padding: 1px;
+    width: 38px;
+    height: 27px;
+    margin-top: -3px;
+    
+}
+
+.dateValueWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.valueName {
+    display: block;
+}
+
+.valueValue {
+    display: block;
+    font-size: 12px;
+}
+
+.locationPickerWrapper {
+    display: flex;
+    margin-bottom: 24px;
+}
+
+.locationIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    position: relative;
+    background-image: var(--primary-color);
+    padding: 1px;
+    width: 38px;
+    height: 38px;
+}
+.dateWrapBefore {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 25px;
+}
+.wrapperBefore {
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 3.5px;
+    padding: 4px 6px;
+}
+
+
+.locationValueWrapper {
+    margin-left: 12px;
+
+}
+
+.valueName {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+
+.rightSideWrapper {
+    padding: 24px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.hostedLabel {
+    color: gray;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.hostUserName {
+    font-weight: 700;
+    margin-left: 8px;
+    display: block;
+}
+
+.about {
+    margin-top: 24px;
+}
+
+.aboutLabel {
+    color: gray;
+}
+
+.aboutContent {
+    display: block;
+    margin-top: 12px;
+    width: 800px;
+    text-align: justify;
+    font-weight: 600;
+}
+
+
+.hostWrapper {
+    display: flex;
+    align-items: center;
+}
