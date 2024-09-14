@@ -2,7 +2,7 @@ import DefaultLayout from "../layout/DefaultLayout";
 import Post from "../components/Post";
 function Home() {
     return ( 
-        <DefaultLayout>
+        <DefaultLayout flex={true}>
           <Post data={{
             id: "",
             title: "",
@@ -19,7 +19,7 @@ function Home() {
           }}/>
 
           <Post data={{
-             id: "",
+             id: "222",
              title: "",
              poster: "",
              username: "",

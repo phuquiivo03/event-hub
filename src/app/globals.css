@@ -12,7 +12,7 @@
   --primary-gradient-2: #BB9BFF;
   --primary-color: linear-gradient(to left, var(--primary-gradient-1), var(--primary-gradient-2));
   --primary-hover: linear-gradient(to left, rgba(255, 185, 210, 0.1), rgba(187, 155, 255, 0.1));
-  --sidebar-width:  254px;
+  --sidebar-width:  320px;
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,

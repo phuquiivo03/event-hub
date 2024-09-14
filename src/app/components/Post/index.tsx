@@ -5,6 +5,7 @@ import { Ellipsis, Bookmark } from "lucide-react";
 import avt from "@/assets/image/avt.png";
 import Image from 'next/image';
 import { useState } from "react";
+import Link from "next/link";
 
 interface PostData {
     id: string;
@@ -63,7 +64,9 @@ function Post({data}: {data: PostData}) {
                    
             </div>
 
-            <span className={styles.detailLink}>See Detail</span>
+            <Link href={`/details/${data?.id||111}`}>
+                <span className={styles.detailLink}>See Detail</span>
+            </Link> 
         </div>
 
     </div> );

@@ -3,6 +3,18 @@
     position: fixed;
 }
 
+
+.heading {
+    display: block;
+    font-size: 38px;
+    font-weight: 800;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 24px;
+    font-style: bold;
+}
+
 .right {
     right: 0;
 }

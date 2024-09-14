@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import styles from './SideBar.module.css'
 import React, { PropsWithChildren } from 'react';
+import ProfileTag from '@/app/components/ProfileTag';
 
 interface Props {
     children: React.ReactNode,
@@ -9,7 +10,9 @@ interface Props {
 
 function SideBar(props: Props) {
     return ( <div className={clsx(styles.wrapper)}>
-        {props.children}
+            <span className={styles.heading}>EventHub</span>
+            {props.children}
+            <ProfileTag />
     </div> );
 }
 

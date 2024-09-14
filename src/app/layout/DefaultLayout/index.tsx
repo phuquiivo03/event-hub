@@ -28,7 +28,7 @@ const sideBarItemsConfig = [
 
 
 
-function DefaultLayout({children}: {children: React.ReactNode}) {
+function DefaultLayout({children, flex}: {children: React.ReactNode, flex?: boolean}) {
   const context = useContext(AppContext);
   const {activeBtn, setActiveBtn} = context!;
   return ( <div className={clsx(styles.wrapper)}>
@@ -47,7 +47,7 @@ function DefaultLayout({children}: {children: React.ReactNode}) {
                 />)}
             </SideBar>
 
-        <div className={clsx(styles.content)}>
+        <div className={clsx(styles.content, flex? styles.flex: styles.block)}>
             {children}
         </div>
        
