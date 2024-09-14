@@ -64,7 +64,7 @@
 
 .optionBtn:active {
     animation-duration: .2s;
-    animation-name: slideout;
+    animation-name: clickeffect;
 }
 
 .optionBtn {
@@ -78,7 +78,7 @@
     stroke: var(--primary-color);
 }
 .detailLink {
-    display: block;
+    display: inline-block;
     margin-top: 6px;
     text-decoration: underline;
     background: var(--primary-color);
@@ -87,6 +87,7 @@
     position: relative;
     cursor: pointer;
     font-weight: 600;
+    
 }
 
 .detailLink:hover::after {
@@ -104,17 +105,43 @@
     animation-name: slidein;
 }
 
+.detailLink::after {
+    content: "";
+    border-radius: 2px;
+    display: block;
+    position: absolute;
+    height: 2px;
+    bottom: 2;
+    left: 0;
+    animation-duration: .2s;
+    animation-name: slideout;
+    width: 64px;
+
+}
+
 @keyframes slidein {
     from {
-      scale: 10%;
+      scale:  10% 1;
     }
   
     to {
       scale: 100% 1;
     }
   }
-
   @keyframes slideout {
+    from {
+        background: var(--primary-color);
+
+        scale: 100% 1;
+    }
+    
+    to {
+        background: var(--primary-color);
+
+        scale:  10% 1;
+    }
+  }
+  @keyframes clickeffect {
     from {
       scale: 90%;
     }
