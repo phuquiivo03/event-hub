@@ -12,7 +12,8 @@
   --primary-gradient-2: #BB9BFF;
   --primary-color: linear-gradient(to left, var(--primary-gradient-1), var(--primary-gradient-2));
   --primary-hover: linear-gradient(to left, rgba(255, 185, 210, 0.1), rgba(187, 155, 255, 0.1));
-  --sidebar-width:  320px;
+  --natural: rgb(228, 231, 232);
+  --sidebar-width:  20%;
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
     #16abff33 0deg,
@@ -103,6 +104,30 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  display: block;
+  width: 2px;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 @media (prefers-color-scheme: dark) {

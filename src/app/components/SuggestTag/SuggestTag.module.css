@@ -1,0 +1,52 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.wrapper:hover {
+    opacity: .9;
+    box-shadow: 1px 1px 4px 1px #00000020;
+}
+
+.poster {
+    width: 80px;
+    height: 80px;
+    border-radius: 4px;
+}
+
+.infoWrapper {
+    margin-left: 8px;
+    width: 248px;
+
+}
+
+.heading {
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.userInfoWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.userName {
+    color: gray;
+    font-size: 14px;
+    
+}

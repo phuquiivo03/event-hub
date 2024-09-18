@@ -128,7 +128,7 @@
 
 
 .rightSideWrapper {
-    padding: 24px;
+    padding: 24px 0 24px 24px;
 }
 
 .title {
@@ -161,9 +161,10 @@
 .aboutContent {
     display: block;
     margin-top: 12px;
-    width: 800px;
+    /* width: 800px; */
     text-align: justify;
     font-weight: 600;
+    padding-right: 48px;
 }
 
 

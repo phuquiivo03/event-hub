@@ -5,12 +5,12 @@ import ProfileTag from '@/app/components/ProfileTag';
 
 interface Props {
     children: React.ReactNode,
-    
+    right?: boolean,
 }
 
 function SideBar(props: Props) {
-    return ( <div className={clsx(styles.wrapper)}>
-            <span className={styles.heading}>EventHub</span>
+    return ( <div className={clsx(styles.wrapper, props.right&&styles.right)}>
+            {!props.right&&<span className={styles.heading}>EventHub</span>}
             {props.children}
             <ProfileTag />
     </div> );
